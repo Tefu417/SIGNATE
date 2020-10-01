@@ -7,8 +7,8 @@ lgb_eval = lgb.Dataset(X_te, Y_te, reference=lgb_train)
 params = {
         'task': 'train',
         'boosting_type': 'gbdt',
-        'objective': 'binary',      # 目的 : 2値分類 
-        'metric': {'binary_error'}, # 評価指標 : 誤り率(= 1-正答率) 
+        'objective': 'binary',      # 目的 : 2値分類
+        'metric': {'binary_error'}, # 評価指標 : 誤り率(= 1-正答率)
         #他には 'binary_logloss','auc'など
         'learning_rate': 0.1,
         'num_leaves': 23,
